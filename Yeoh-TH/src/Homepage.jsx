@@ -10,7 +10,8 @@ function Homepage(){
             <a className="navbar-button" href="#/awards">Awards</a>
             <a className="navbar-button" href="#/lilstories">Little Stories!</a>
         </div>
-        <h1><span className="hoverEffect">W</span>
+        <h1>
+        <span className="hoverEffect">W</span>
         <span className="hoverEffect">e</span>
         <span className="hoverEffect">l</span>
         <span className="hoverEffect">c</span>

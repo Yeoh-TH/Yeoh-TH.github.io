@@ -4,12 +4,22 @@
   font-weight: 400;
 
   --powderBlue: #9cc7e8;
+  --yInMnBlue: #464d77;
+  --lapisLazuli:#05668D;
+  --payneGray: #19647E;
+  --redwood: #b26e63;
   --cinnabar:#e15634;
+  --bittersweet: #ff715b;
   --sunset: #fcd29f;
   --flax: #f3de8a;
+  --xandous:#e3b23c;
   --apricot:#ffd8be;
+  --seaGreen:#519872;
   --englishViolet: #593f62;
   --carribeanCurrent: #38686a;
+  --celadon: #acd8aa;
+  --grey: #58504A;
+  --eggplant: #443742;
 
   color-scheme: light dark;
   color: var(--englishViolet);
@@ -20,6 +30,55 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+#timeline{
+  width: 100%;
+  background-color: var(--sunset);
+  display: flex;
+}
+
+.showcaseDisplay{
+  width: 100%;
+  display: flex;
+  background-color: var(--redwood);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 5%;
+}
+
+.pictureDisplay{
+  flex: 2;
+  max-width: 50vw;
+  max-height: 50vw;
+}
+
+.pictureCaption{
+  flex: 1;
+  font-size: 5vw;
+  color: var(--celadon);
+  margin: 1vw;
+}
+
+.yearDisplay{
+  text-decoration: none;
+  font-size: 3vw;
+  margin: 1vw;
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+  color: var(--yInMnBlue);
+}
+
+.yearDisplay:hover{
+  font-size: 5vw;
+  margin: 2vw;
+  flex: 2;
+  background-color: var(--seaGreen);
+  color: var(--eggplant);
+  border-radius: 50px;
+  transition: 1s;
 }
 
 .paragraph{
@@ -47,7 +106,6 @@ body {
   background-color: var(--cinnabar);
   width: 97%;
   padding: 1.5vw;
-  margin-bottom: 5vw;
 }
 
 .navbar-button{
@@ -55,6 +113,7 @@ body {
   color: var(--sunset);
   font-size: 4vw;
   padding: 1vw;
+  transition: 1s ease-in-out;
 }
 
 .navbar-button-active{
@@ -79,12 +138,17 @@ h1 {
   font-weight: 900;
   text-align: center;
   text-shadow: 10px 5px 10px var(--cinnabar);
+  transition: 1s ease-in-out;
+}
+
+.hoverEffect{
+  transition: 1s ease-in-out;
 }
 
 .hoverEffect:hover{
   color: var(--apricot);
-  transition: 0.25s;
-  
+  font-size: 5vw;
+  transition: 1s;
 }
 
 p{
