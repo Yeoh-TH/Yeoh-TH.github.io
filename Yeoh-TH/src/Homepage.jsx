@@ -1,4 +1,5 @@
 import React from "react";
+import developerLogo from "/THDeveloperLogomark2.png";
 import "./index.css";
 
 function Homepage(){
@@ -20,8 +21,9 @@ function Homepage(){
         <span className="hoverEffect">e</span>
         <span className="hoverEffect">!</span>
         </h1>
-        <div style={{textAlign:"center", backgroundColor:"#f3de8a"}}>
-        <p>I am Tian Huai, or otherwise known as Yeoh-TH, and I hope that you will enjoy navigating this pretty simple website to learn more about me. Cheers!</p>
+        <div className="paragraph">
+        <img src={developerLogo} className="logo"></img>
+        <p className="paragraphText">I am Tian Huai, or otherwise known as Yeoh-TH, and I hope that you will enjoy navigating this pretty simple website to learn more about me. Cheers!</p>
         </div>
         </>
     )

@@ -38,6 +38,25 @@
   display: flex;
 }
 
+.pictureGroup{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: auto;
+}
+
+.secondPic{
+  flex: 1;
+  max-width: 25vw;
+  max-height: 25vw;
+}
+
+.secondPic:hover{
+  flex: 1;
+  max-width: 30vw;
+  max-height: 30vw;
+  transition: 1s ease-in-out;
+}
+
 .showcaseDisplay{
   width: 100%;
   display: flex;
@@ -45,12 +64,25 @@
   padding-top: 2%;
   padding-bottom: 2%;
   margin-bottom: 5%;
+  justify-content: auto;
+  flex-direction: row;
+}
+
+h2{
+  font-size: 5vw;
+  text-align: center;
 }
 
 .pictureDisplay{
   flex: 2;
   max-width: 50vw;
   max-height: 50vw;
+}
+
+.logo{
+  flex: 2;
+  max-width: 25vw;
+  max-height: 25vw;
 }
 
 .pictureCaption{
@@ -71,6 +103,20 @@
   color: var(--yInMnBlue);
 }
 
+.yearDisplay-active{
+  text-decoration: none;
+  font-size: 5vw;
+  margin: 2vw;
+  flex: 2;
+  background-color: var(--seaGreen);
+  color: var(--eggplant);
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+  color: var(--yInMnBlue);
+}
+
 .yearDisplay:hover{
   font-size: 5vw;
   margin: 2vw;
@@ -83,8 +129,13 @@
 
 .paragraph{
   text-align: center;
+  padding: 2vw;
+  display: flex;
+}
+
+.paragraphText{
+  padding: 2vw;
   background-color: var(--flax);
-  padding: 1px;
 }
 
 footer{
@@ -152,7 +203,9 @@ h1 {
 }
 
 p{
+  flex: 1;
   font-size: 3vw;
   font-weight: 400;
+  padding: 1vw;
 }
 
