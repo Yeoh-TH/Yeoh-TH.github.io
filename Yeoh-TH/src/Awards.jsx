@@ -20,7 +20,7 @@ function Awards(){
         <h1 style={{fontSize:"7vw"}}>Most Recent Award!</h1>
         <div className="showcaseDisplay">
         <img src={Illustratum1} className="pictureDisplay" style={{textAlign:"center"}}></img>
-        <p className="pictureCaption"> Team reverberation winning an award at illustratum, featuring one of my webapps!</p>
+        <p className="pictureCaption" style={{fontSize:"4vw"}}> Team reverberation winning Teaching Innovation and Distinction at illustratum, featuring one of my webapps!</p>
         </div>
         </>
         
