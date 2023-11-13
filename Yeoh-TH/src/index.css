@@ -75,7 +75,7 @@
 .showcaseDisplay{
   width: 100%;
   display: flex;
-  background-color: var(--redwood);
+  background-color: var(--celadon);
   padding-top: 2%;
   padding-bottom: 2%;
   margin-bottom: 5%;
@@ -92,7 +92,7 @@ h3{
   font-size: 3vw;
   text-align: center;
   color: var(--carribeanCurrent);
-  background-color: var(--celadon);
+  background-color: var(--sunset);
   border-radius: 100px;
 }
 
@@ -100,6 +100,12 @@ h3{
   flex: 2;
   max-width: 50vw;
   max-height: 50vw;
+}
+
+.videoDisplay{
+  flex: 2;
+  max-width: 60vw;
+  max-height: 60vw;
 }
 
 .logo{
@@ -111,7 +117,7 @@ h3{
 .pictureCaption{
   flex: 1;
   font-size: 5vw;
-  color: var(--celadon);
+  color: var(--eggplant);
   margin: 1vw;
 }
 
@@ -223,6 +229,11 @@ h1 {
   color: var(--apricot);
   font-size: 5vw;
   transition: 1s;
+}
+
+.padding1vw{
+  flex: 1;
+  padding: 1vw;
 }
 
 p{
