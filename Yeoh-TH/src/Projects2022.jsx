@@ -1,4 +1,6 @@
 import React from "react";
+import spacePlaneGame from "/spacePlaneGame.png";
+import waterSaver from "/waterSaver.png";
 import "./index.css";
 
 function Projects2022() {
@@ -17,7 +19,26 @@ function Projects2022() {
         </div>
         <h1>2022</h1>
         <div className="showcaseDisplay">
-            
+            <img className="pictureDisplay" src={waterSaver}></img>
+            <div className="padding1vw">
+            <h3>Water saver game!</h3>
+            <p>
+                A quick prototype of a game about saving water, have a look!
+                <br/>
+                <a href="https://martymcfli.itch.io/water-game-for-geography-pt-prototype" target="_blank"><i class="fas fa-gamepad"></i></a>
+            </p>
+            </div>
+        </div>
+
+        <div className="showcaseDisplay">
+            <div className="padding1vw">
+                <h3>Space controls!</h3>
+                <p>One of my first introductions into game development and 3D design, it was fun playing around with a spaceship and learning the fundamentals!
+                <br/>
+                <a href="https://martymcfli.itch.io/space-and-asteroids" target="_blank"><i class="fas fa-gamepad"></i></a>
+                </p>
+            </div>
+            <img className="pictureDisplay" src={spacePlaneGame}></img>
         </div>
     </>
     )

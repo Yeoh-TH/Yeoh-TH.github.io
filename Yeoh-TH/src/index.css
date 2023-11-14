@@ -24,6 +24,7 @@
   color-scheme: light dark;
   color: var(--englishViolet);
   background-color: var(--powderBlue);
+  background-image: linear-gradient(to top left,hsl(206, 62%, 46%),hsl(206, 62%, 76%));
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -108,10 +109,25 @@ h3{
   max-height: 60vw;
 }
 
+i{
+  color: var(--bittersweet);
+  font-size: 10vw;
+  transition: 1s ease-in-out;
+}
+
+i:hover{
+  color: var(--cinnabar);
+  transition: 1s ease-in-out;
+  transform: rotate(45deg);
+  font-size: 15vw;
+  padding: 1vw;
+}
+
 .logo{
   flex: 2;
   max-width: 25vw;
   max-height: 25vw;
+  border-radius: 55px;
 }
 
 .pictureCaption{
