@@ -61,20 +61,32 @@ function Projects2023(){
 
         <div className="showcaseDisplay">
             <div className="pictureGroup">
-            <video className="pictureDisplay" controls>
-                <source src="/ISS_Video.mov"/>
-            </video>
-            <div className="pictureGroupDobbleganger" style={{textAlign:"center"}}>
-                <img src={ISS} className="secondPic" ></img>
-                <img src={ISS2} className="secondPic"></img>
-            </div>
-            </div>
-            <div className="padding1vw">
-            <h3>Investigative Skills in Science!</h3>
-            <p>
-                An applied learning research project that my team and I carried out at the start of the year, we gained a lot of experience and fun through this project.
-            </p>
+                <video className="pictureDisplay" controls>
+                    <source src="/ISS_Video.mov"/>
+                </video>
+                <div className="pictureGroupDobbleganger" style={{textAlign:"center"}}>
+                    <img src={ISS} className="secondPic" ></img>
+                    <img src={ISS2} className="secondPic"></img>
+                </div>
         </div>
+            <div className="padding1vw">
+                <h3>Investigative Skills in Science!</h3>
+                <p>
+                    An applied learning research project that my team and I carried out at the start of the year, we gained a lot of experience and fun through this project.
+                </p>
+            </div>
+        </div>
+
+        <div className="showcaseDisplay">
+            <div className="padding1vw">
+                <h3>Remote Sensing with GEE!</h3>
+                <p>
+                    Using the Google Earth Engine, I was able to help map out data from the Sentinel 5p satellite with Offline data of Nitrogen Dioxide and Carbon Monoxide, which allowed pinpointing of wildfires!
+                </p>
+            </div>
+            <div className="pictureGroup">
+                <embed src="https://wildfire-406604.projects.earthengine.app/view/fireden" id="fireDen"></embed>
+            </div>
         </div>
 
         </>
