@@ -9,7 +9,6 @@ function Homepage(){
             <a className="navbar-button-active" href="#/">Homepage</a>
             <a className="navbar-button" href="#/projects">Projects</a>
             <a className="navbar-button" href="#/awards">Awards</a>
-            <a className="navbar-button" href="#/lilstories">Little Stories!</a>
         </div>
         <h1>
         <span className="hoverEffect">W</span>
