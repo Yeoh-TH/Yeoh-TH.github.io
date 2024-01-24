@@ -9,7 +9,6 @@ function Projects(){
             <a className="navbar-button" href="#/">Homepage</a>
             <a className="navbar-button-active" href="#/projects">Projects</a>
             <a className="navbar-button" href="#/awards">Awards</a>
-            <a className="navbar-button" href="#/lilstories">Little Stories!</a>
         </div>
         <div id="timeline">
             <a className="yearDisplay" href="#/projects/2021">2021</a>
