@@ -5,26 +5,27 @@
 
   --powderBlue: #9cc7e8;
   --yInMnBlue: #464d77;
-  --lapisLazuli:#05668D;
+  --lapisLazuli: #05668D;
   --payneGray: #19647E;
   --redwood: #b26e63;
-  --cinnabar:#e15634;
+  --cinnabar: #e15634;
   --bittersweet: #ff715b;
   --sunset: #fcd29f;
   --flax: #f3de8a;
-  --xandous:#e3b23c;
-  --apricot:#ffd8be;
-  --seaGreen:#519872;
+  --xandous: #e3b23c;
+  --apricot: #ffd8be;
+  --seaGreen: #519872;
   --englishViolet: #593f62;
   --carribeanCurrent: #38686a;
   --celadon: #acd8aa;
   --grey: #58504A;
   --eggplant: #443742;
+  --gold: #FFD500;
+  --brownSugar: #bb7e5d;
 
   color-scheme: light dark;
-  color: var(--englishViolet);
-  background-color: var(--powderBlue);
-  background-image: linear-gradient(to top left,hsl(206, 62%, 46%),hsl(206, 62%, 76%));
+  color: var(--gold);
+  background-color: hsl(0, 0, 0);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -33,50 +34,50 @@
   -webkit-text-size-adjust: 100%;
 }
 
-#timeline{
+#timeline {
   width: 100%;
-  background-color: var(--sunset);
+  background-color: var(--brownSugar);
   display: flex;
 }
 
-.pictureGroup{
+.pictureGroup {
   display: flex;
   flex-flow: column wrap;
   justify-content: auto;
 }
 
-.secondPic{
+.secondPic {
   flex: 1;
   max-width: 20vw;
   max-height: 20vw;
   transition: 1s ease-in-out;
 }
 
-.secondPic:hover{
+.secondPic:hover {
   flex: 2;
   max-width: 30vw;
   max-height: 30vw;
   transition: 1s ease-in-out;
 }
 
-.thirdPic{
+.thirdPic {
   flex: 1;
   max-width: 10vw;
   max-height: 10vw;
   transition: 1s ease-in-out;
 }
 
-.thirdPic:hover{
+.thirdPic:hover {
   flex: 2;
   max-width: 15vw;
   max-height: 15vw;
   transition: 1s ease-in-out;
 }
 
-.showcaseDisplay{
+.showcaseDisplay {
   width: 100%;
   display: flex;
-  background-color: var(--celadon);
+  background-color: var(--grey);
   padding-top: 2%;
   padding-bottom: 2%;
   margin-bottom: 5%;
@@ -84,60 +85,61 @@
   flex-direction: row;
 }
 
-h2{
+h2 {
   font-size: 5vw;
   text-align: center;
 }
 
-h3{
+h3 {
   font-size: 3vw;
   text-align: center;
-  color: var(--carribeanCurrent);
-  background-color: var(--sunset);
+  color: var(--flax);
+  font-weight: bold;
+  background-color: none;
   border-radius: 100px;
 }
 
-.pictureDisplay{
+.pictureDisplay {
   flex: 2;
   max-width: 50vw;
   max-height: 50vw;
 }
 
-.videoDisplay{
+.videoDisplay {
   flex: 2;
   max-width: 60vw;
   max-height: 60vw;
 }
 
-i{
+i {
   color: var(--bittersweet);
-  font-size: 10vw;
+  font-size: 3vw;
   transition: 1s ease-in-out;
 }
 
-i:hover{
+i:hover {
   color: var(--cinnabar);
   transition: 1s ease-in-out;
   transform: rotate(45deg);
-  font-size: 15vw;
+  font-size: 4vw;
   padding: 1vw;
 }
 
-.logo{
+.logo {
   flex: 2;
   max-width: 25vw;
   max-height: 25vw;
   border-radius: 55px;
 }
 
-.pictureCaption{
+.pictureCaption {
   flex: 1;
   font-size: 5vw;
   color: var(--eggplant);
   margin: 1vw;
 }
 
-.yearDisplay{
+.yearDisplay {
   text-decoration: none;
   font-size: 3vw;
   margin: 1vw;
@@ -148,7 +150,7 @@ i:hover{
   color: var(--yInMnBlue);
 }
 
-.yearDisplay-active{
+.yearDisplay-active {
   text-decoration: none;
   font-size: 5vw;
   margin: 2vw;
@@ -162,7 +164,7 @@ i:hover{
   color: var(--yInMnBlue);
 }
 
-.yearDisplay:hover{
+.yearDisplay:hover {
   font-size: 5vw;
   margin: 2vw;
   flex: 2;
@@ -172,21 +174,21 @@ i:hover{
   transition: 1s;
 }
 
-.paragraph{
+.paragraph {
   text-align: center;
   padding: 2vw;
   display: flex;
 }
 
-.paragraphText{
+.paragraphText {
   padding: 2vw;
-  background-color: var(--flax);
+  /* background-color: var(--brownSugar); */
 }
 
-footer{
-  font-size: 3vw;
+footer {
+  font-size: 1vw;
   width: 100%;
-  background-color: var(--apricot);
+  background-color: var(--grey);
   padding: 1vw;
   position: fixed;
   left: 0;
@@ -198,69 +200,121 @@ body {
   margin-bottom: 10vw;
 }
 
-#navbar{
-  background-color: var(--cinnabar);
+#navbar {
+  background-color: var(--grey);
   width: 97%;
   padding: 1.5vw;
 }
 
-.navbar-button{
+.navbar-button {
   text-decoration: none;
-  color: var(--sunset);
+  color: var(--flax);
   font-size: 4vw;
   padding: 1vw;
   transition: 1s ease-in-out;
 }
 
-.navbar-button-active{
+.navbar-button-active {
   text-decoration: none;
-  color: var(--sunset);
+  color: var(--yInMnBlue);
   font-size: 4vw;
   padding: 1vw;
   margin: 2vw;
   border-radius: 10px;
-  background-color: var(--carribeanCurrent);
+  background-color: var(--powderBlue);
 }
 
-.navbar-button:hover{
+.navbar-button:hover {
   transition: 1s;
   border-radius: 10px;
-  background-color: var(--carribeanCurrent);
+  background-color: var(--powderBlue);
 }
 
-#fireDen{
+#fireDen {
   width: 60vw;
   height: 60vw;
 }
 
 h1 {
-  font-size: 10vw;
+  font-size: 20vw;
   line-height: 1.1;
   font-weight: 900;
   text-align: center;
-  text-shadow: 10px 5px 10px var(--cinnabar);
+  margin: none;
+  /* text-shadow: 10px 5px 10px var(--gold); */
   transition: 1s ease-in-out;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
 }
 
-.hoverEffect{
+.hoverEffect {
   transition: 1s ease-in-out;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.hoverEffect:hover{
-  color: var(--apricot);
-  font-size: 5vw;
+.hoverEffect:hover {
+  color: var();
+  font-size: 10vw;
   transition: 1s;
 }
 
-.padding1vw{
+.padding1vw {
   flex: 1;
+  text-align: justify;
   padding: 1vw;
 }
 
-p{
+p {
   flex: 1;
   font-size: 3vw;
   font-weight: 400;
   padding: 1vw;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  background-color: none;
+  position: relative;
+  perspective: 500px;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#introPara {
+  font-size: 10vw;
+  text-align: center;
+  position: relative;
+  color: var(--gold);
+  transform: rotateX(20deg);
+  margin-block-start: 0.1em;
+  margin-block-end: 0em;
+}
+
+.introText {
+  margin-block-start: 0em;
+  font-size: 5vw;
+  text-align: justify;
+  position: relative;
+  color: var(--gold);
+  font-weight: bold;
+  transform: translateZ(-150px) rotateX(20deg);
+  /* animation: scroll 60s linear forwards; */
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    font-size: 4vw;
+  }
+}
+
+@keyframes scroll {
+  from {
+    top: 0;
+  }
+
+  to {
+    top: -7500px
+  }
+}
