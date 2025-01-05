@@ -12,7 +12,6 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<Homepage />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/2021" element={<Projects2021 />} />
         <Route path="/projects/2022" element={<Projects2022 />} />
         <Route path="/projects/2023" element={<Projects2023 />} />
         <Route path="/awards" element={<Awards />} />
