@@ -1,5 +1,7 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
   line-height: 1.5;
   font-weight: 400;
 
@@ -22,6 +24,10 @@
   --eggplant: #443742;
   --gold: #FFD500;
   --brownSugar: #bb7e5d;
+  --empireStrikesBackBlue: #76b3dd;
+  --empireStrikesBackGrey: #b4bac0;
+  --empireStrikesBackDarkGrey: #3c3c44;
+  --empireStrikesBackBrown: #a17b57;
 
   color-scheme: light dark;
   color: var(--gold);
@@ -36,7 +42,8 @@
 
 #timeline {
   width: 100%;
-  background-color: var(--brownSugar);
+  background-color: var(--empireStrikesBackBrown);
+  border-radius: 50px;
   display: flex;
 }
 
@@ -86,8 +93,9 @@
 }
 
 h2 {
-  font-size: 5vw;
+  font-size: 8vw;
   text-align: center;
+  margin-inline-end: 0.1em;
 }
 
 h3 {
@@ -135,19 +143,19 @@ i:hover {
 .pictureCaption {
   flex: 1;
   font-size: 5vw;
-  color: var(--eggplant);
+  color: var(--gold);
   margin: 1vw;
 }
 
 .yearDisplay {
   text-decoration: none;
-  font-size: 3vw;
+  font-size: 5vw;
   margin: 1vw;
   flex: 1;
   text-align: center;
   font-weight: bold;
   transition: 1s ease-in-out;
-  color: var(--yInMnBlue);
+  color: var(--empireStrikesBackGrey);
 }
 
 .yearDisplay-active {
@@ -155,21 +163,20 @@ i:hover {
   font-size: 5vw;
   margin: 2vw;
   flex: 2;
-  background-color: var(--seaGreen);
-  color: var(--eggplant);
+  background-color: var(--gold);
   border-radius: 50px;
   text-align: center;
   font-weight: bold;
   transition: 1s ease-in-out;
-  color: var(--yInMnBlue);
+  color: var(--powderBlue);
 }
 
 .yearDisplay:hover {
-  font-size: 5vw;
+  font-size: 7vw;
   margin: 2vw;
   flex: 2;
-  background-color: var(--seaGreen);
-  color: var(--eggplant);
+  background-color: var(--flax);
+  color: var(--powderBlue);
   border-radius: 50px;
   transition: 1s;
 }
@@ -182,13 +189,16 @@ i:hover {
 
 .paragraphText {
   padding: 2vw;
+  text-align: justify;
+  margin-inline-start: 0.1em;
   /* background-color: var(--brownSugar); */
 }
 
 footer {
   font-size: 1vw;
   width: 100%;
-  background-color: var(--grey);
+  background-color: var(--empireStrikesBackGrey);
+  color: var(--empireStrikesBackDarkGrey);
   padding: 1vw;
   position: fixed;
   left: 0;
@@ -201,14 +211,14 @@ body {
 }
 
 #navbar {
-  background-color: var(--grey);
+  background-color: var(--empireStrikesBackGrey);
   width: 97%;
   padding: 1.5vw;
 }
 
 .navbar-button {
   text-decoration: none;
-  color: var(--flax);
+  color: var(--empireStrikesBackDarkGrey);
   font-size: 4vw;
   padding: 1vw;
   transition: 1s ease-in-out;
@@ -216,18 +226,18 @@ body {
 
 .navbar-button-active {
   text-decoration: none;
-  color: var(--yInMnBlue);
+  color: var(--flax);
   font-size: 4vw;
   padding: 1vw;
   margin: 2vw;
   border-radius: 10px;
-  background-color: var(--powderBlue);
+  background-color: var(--empireStrikesBackBlue);
 }
 
 .navbar-button:hover {
   transition: 1s;
   border-radius: 10px;
-  background-color: var(--powderBlue);
+  background-color: var(--empireStrikesBackBlue);
 }
 
 #fireDen {
