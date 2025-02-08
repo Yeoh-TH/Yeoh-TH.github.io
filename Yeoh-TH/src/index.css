@@ -81,6 +81,12 @@ a.nav-link.active {
   border-width: 10px !important;
 }
 
+#bottomFooter {
+  margin-top: 5vw;
+  width: 100%;
+  height: 8rem;
+}
+
 a::after {
   content: none !important;
 }
@@ -88,5 +94,11 @@ a::after {
 @media only screen and (max-width: 400px) {
   .navIcon {
     max-width: 20vw;
+  }
+
+  #bottomFooter {
+    margin-top: 5vw;
+    width: 100%;
+    height: 10rem;
   }
 }
