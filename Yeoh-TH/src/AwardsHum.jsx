@@ -10,7 +10,7 @@ function AwardsHum() {
     };
     return (
         <div style={{ width: "100%", height: "100%" }}>
-            <Navbar className="mt-4" expand="lg">
+            <Navbar className="mt" expand="lg">
                 <Navbar.Brand href="#">
                     <img src="/THDeveloperLogomark2.png" className="navIcon"></img>
                 </Navbar.Brand>
@@ -23,24 +23,11 @@ function AwardsHum() {
                             </Nav.Link>
                         </Nav.Item>
 
-                        <NavDropdown
-                            isMegaMenu
-                            title="Publicity"
-                            eventKey="publicity"
-                            onClick={() => clickNavbarItem('publicity')}>
-                            <Container fluid>
-                                <Row className="p-4">
-                                    <Col>
-                                        <p>
-                                            <strong>
-                                                Publicity
-                                            </strong>
-                                            <p>These are stories of me and my projects being featured in various videos and stories publicly.</p>
-                                        </p>
-                                    </Col>
-                                </Row>
-                            </Container>
-                        </NavDropdown>
+                        <Nav.Item>
+                            <Nav.Link href="#/publicity" eventKey="publicity" onClick={() => clickNavbarItem('publicity')}>
+                                Publicity
+                            </Nav.Link>
+                        </Nav.Item>
 
                         <NavDropdown
                             isMegaMenu
@@ -79,7 +66,13 @@ function AwardsHum() {
                                             href="#/social-work"
                                             onClick={() => clickNavbarItem('firstDropdown')}
                                         >
-                                            Social Projects
+                                            Service Projects
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item
+                                            href="#/humanities"
+                                            onClick={() => clickNavbarItem('firstDropdown')}
+                                        >
+                                            Humanities Projects
                                         </NavDropdown.Item>
                                         <NavDropdown.Item
                                             href="#/web-and-games"
@@ -108,14 +101,16 @@ function AwardsHum() {
                             <Container fluid>
                                 <Row>
                                     <Col>
-                                        <p>
-                                            <strong>
-                                                Featuring the events I have actively engaged in
-                                            </strong>
-                                        </p>
-                                        <p>
-                                            These include the likes of forums, talks, or even participating in interesting activties!
-                                        </p>
+                                        <Col>
+                                            <p>
+                                                <strong>
+                                                    Featuring my awards
+                                                </strong>
+                                            </p>
+                                            <p>
+                                                These include awards from the Sciences, Humanities and Languages. Please make your selection to learn more.
+                                            </p>
+                                        </Col>
                                     </Col>
                                     <Col>
                                         <NavDropdown.Item
@@ -130,6 +125,12 @@ function AwardsHum() {
                                         >
                                             Applied Research
                                         </NavDropdown.Item>
+                                        <NavDropdown.Item
+                                            href="#/awards-lang"
+                                            onClick={() => clickNavbarItem('secondDropdown')}
+                                        >
+                                            Languages
+                                        </NavDropdown.Item>
                                     </Col>
                                 </Row>
                             </Container>
@@ -143,6 +144,20 @@ function AwardsHum() {
                 </Navbar.Collapse>
             </Navbar>
             <section className="m-8"></section>
+            <Footer id="bottomFooter">
+                <Footer.Top>
+                    <Footer.Top.ContactLinks>
+                        <a href="mailto:soundwavedecepticonleader@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fas-contact" style={{ fontSize: 'relative', color: '#464d77', marginRight: '4px' }} ></i>
+                            Contact Me!
+                        </a>
+                        <a href="https://boxd.it/cfpnX" target="_blank">
+                            Letterboxd
+                            <i class="fa fa-film" style={{ fontSize: 'relative', color: '#464d77', marginLeft: '4px' }}></i>
+                        </a>
+                    </Footer.Top.ContactLinks>
+                </Footer.Top>
+            </Footer>
         </div>
     )
 }

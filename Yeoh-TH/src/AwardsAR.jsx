@@ -3,14 +3,13 @@ import "./index.css";
 import '@govtechsg/sgds/css/sgds.css';
 import { Navbar, Nav, NavDropdown, Footer, Container, Col, Row, Card, NavLink } from '@govtechsg/sgds-react';
 
-const AwardsAR = () => {
-    const [active, setActive] = useState('about');
+function AwardsAR() {
     const clickNavbarItem = eventKey => {
         setActive(eventKey);
     };
     return (
         <div style={{ width: "100%" }}>
-            <Navbar className="mt-4" expand="lg">
+            <Navbar className="mt" expand="lg">
                 <Navbar.Brand href="#">
                     <img src="/THDeveloperLogomark2.png" className="navIcon"></img>
                 </Navbar.Brand>
@@ -18,29 +17,16 @@ const AwardsAR = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav navbarScroll defaultActiveKey="awards">
                         <Nav.Item>
-                            <Nav.Link className="navTopLink" href="#/" eventKey="awards" onClick={() => clickNavbarItem('home')}>
+                            <Nav.Link className="navTopLink" href="#/" eventKey="home" onClick={() => clickNavbarItem('home')}>
                                 Home
                             </Nav.Link>
                         </Nav.Item>
 
-                        <NavDropdown
-                            isMegaMenu
-                            title="Publicity"
-                            eventKey="publicity"
-                            onClick={() => clickNavbarItem('publicity')}>
-                            <Container fluid>
-                                <Row className="p-4">
-                                    <Col>
-                                        <p>
-                                            <strong>
-                                                Publicity
-                                            </strong>
-                                            <p>These are stories of me and my projects being featured in various videos and stories publicly.</p>
-                                        </p>
-                                    </Col>
-                                </Row>
-                            </Container>
-                        </NavDropdown>
+                        <Nav.Item>
+                            <Nav.Link href="#/publicity" eventKey="publicity" onClick={() => clickNavbarItem('publicity')}>
+                                Publicity
+                            </Nav.Link>
+                        </Nav.Item>
 
                         <NavDropdown
                             isMegaMenu
@@ -79,7 +65,13 @@ const AwardsAR = () => {
                                             href="#/social-work"
                                             onClick={() => clickNavbarItem('firstDropdown')}
                                         >
-                                            Social Projects
+                                            Service Projects
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item
+                                            href="#/humanities"
+                                            onClick={() => clickNavbarItem('firstDropdown')}
+                                        >
+                                            Humanities Projects
                                         </NavDropdown.Item>
                                         <NavDropdown.Item
                                             href="#/web-and-games"
@@ -108,14 +100,16 @@ const AwardsAR = () => {
                             <Container fluid>
                                 <Row>
                                     <Col>
-                                        <p>
-                                            <strong>
-                                                Featuring the events I have actively engaged in
-                                            </strong>
-                                        </p>
-                                        <p>
-                                            These include the likes of forums, talks, or even participating in interesting activties!
-                                        </p>
+                                        <Col>
+                                            <p>
+                                                <strong>
+                                                    Featuring my awards
+                                                </strong>
+                                            </p>
+                                            <p>
+                                                These include awards from the Sciences, Humanities and Languages. Please make your selection to learn more.
+                                            </p>
+                                        </Col>
                                     </Col>
                                     <Col>
                                         <NavDropdown.Item
@@ -129,6 +123,12 @@ const AwardsAR = () => {
                                             onClick={() => clickNavbarItem('secondDropdown')}
                                         >
                                             Applied Research
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item
+                                            href="#/awards-lang"
+                                            onClick={() => clickNavbarItem('secondDropdown')}
+                                        >
+                                            Languages
                                         </NavDropdown.Item>
                                     </Col>
                                 </Row>
@@ -160,7 +160,7 @@ const AwardsAR = () => {
             </Footer>
         </div>
 
-    );
+    )
 }
 
 export default AwardsAR

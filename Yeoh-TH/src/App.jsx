@@ -6,6 +6,7 @@ import WebAndGames from './AppliedResearch';
 import AppliedResearch from './WebAndGames';
 import AwardsHum from "./AwardsHum";
 import AwardsAR from "./AwardsAR";
+import Publicity from "./Publicity";
 
 const App = () => {
   return (
@@ -15,8 +16,9 @@ const App = () => {
         <Route path="/engineering" element={<Engineering />} />
         <Route path="/applied-research" element={<AppliedResearch />} />
         <Route path="/web-and-games" element={<WebAndGames />} />
+        <Route path="/awards-ar" element={<AwardsAR />} />
         <Route path="/awards-hum" element={<AwardsHum />} />
-        <Route path="/awards-ar" elment={<AwardsAR />} />
+        <Route path="/publicity" element={<Publicity />} />
       </Routes>
     </>
   )

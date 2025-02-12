@@ -25,25 +25,11 @@ function Homepage() {
                             </Nav.Link>
                         </Nav.Item>
 
-                        <NavDropdown
-                            isMegaMenu
-                            title="Publicity"
-                            eventKey="publicity"
-                            onClick={() => clickNavbarItem('publicity')}>
-                            <Container fluid>
-                                <Row className="p-4">
-                                    <Col>
-                                        <p>
-                                            <strong>
-                                                Publicity
-                                            </strong>
-                                            <p>These are stories of me and my projects being featured in various videos and stories publicly.</p>
-                                        </p>
-                                    </Col>
-                                </Row>
-                            </Container>
-
-                        </NavDropdown>
+                        <Nav.Item>
+                            <Nav.Link href="#/publicity" eventKey="publicity" onClick={() => clickNavbarItem('publicity')}>
+                                Publicity
+                            </Nav.Link>
+                        </Nav.Item>
 
                         <NavDropdown
                             isMegaMenu
@@ -82,7 +68,13 @@ function Homepage() {
                                             href="#/social-work"
                                             onClick={() => clickNavbarItem('firstDropdown')}
                                         >
-                                            Social Projects
+                                            Service Projects
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item
+                                            href="#/humanities"
+                                            onClick={() => clickNavbarItem('firstDropdown')}
+                                        >
+                                            Humanities Projects
                                         </NavDropdown.Item>
                                         <NavDropdown.Item
                                             href="#/web-and-games"
@@ -113,11 +105,11 @@ function Homepage() {
                                     <Col>
                                         <p>
                                             <strong>
-                                                Featuring the events I have actively engaged in
+                                                Featuring my awards
                                             </strong>
                                         </p>
                                         <p>
-                                            These include the likes of forums, talks, or even participating in interesting activties!
+                                            These include awards from the Sciences, Humanities and Languages. Please make your selection to learn more.
                                         </p>
                                     </Col>
                                     <Col>
@@ -133,6 +125,18 @@ function Homepage() {
                                         >
                                             Applied Research
                                         </NavDropdown.Item>
+                                        <NavDropdown.Item
+                                            href="#/awards-lang"
+                                            onClick={() => clickNavbarItem('secondDropdown')}
+                                        >
+                                            Languages
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Divider />
+                                        <NavDropdown.Item
+                                            href='#/awards-others'
+                                            onClick={() => clickNavbarItem('secondDropdown')}>
+                                            Others
+                                        </NavDropdown.Item>
                                     </Col>
                                 </Row>
                             </Container>
@@ -146,8 +150,67 @@ function Homepage() {
                 </Navbar.Collapse>
             </Navbar>
             <section className="m-8">
-
+                <h1>Why Me?</h1>
                 <Row>
+                    <Col xs lg="6">
+                        <Card style={{ padding: "2vw" }}>
+                            <Card.Title>Technical Skills I have developed</Card.Title>
+                            <Card.Subtitle style={{ marginTop: "6px" }}>Soldering, 3D-Printing, Threading... I have learnt them all! </Card.Subtitle>
+                            <Card.Header variant="top">
+                                <video src="./SolderingVid.mp4#t=180,240" style={{ width: "100%", minHeight: "400px" }} controls muted ></video>
+                                Video of me soldering
+                            </Card.Header>
+                            <Card.Body style={{ textAlign: "justified" }}>
+                                I believe that to first understand the world, one must first understand the tools that shape it. I have learnt to use a wide range of physical and digital tools like 3D Modelling, Soldering and even Mechanical skills like Threading to bring countless projects to life.<br /> Read on to find out how I apply these skills!
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col xs lg="6">
+                        <Card style={{ padding: "2vw" }}>
+                            <Card.Title>The German Connection</Card.Title>
+                            <Card.Subtitle>Germany is world-renowned for its engineering</Card.Subtitle>
+                            <Card.Header variant="top">
+                                <img src="./GermanyR&D.png" style={{ width: "100%", minHeight: "200px" }}></img>
+                                Total Expenditure on Research by Germany Figure from ResearchGate
+                            </Card.Header>
+                            <Card.Body>
+                                Guten Tag! I have been self-learning German since last year, and I am currently at the high A1 level, which means I can discuss my daily routine, order food at a restaurant, and chat a little in German according to the international CEFR Levels. This is because I anticipate that Germany will play a key role in the Engineering Industry, and thus I am learning German to better understand the culture and language of the country so I can hopefully have an overseas internship or exchange programme to learn more about Germany's strategy in engineering.
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+                <Row style={{ marginTop: "2vw" }}>
+                    <Col xs lg="6">
+                        <Card style={{ padding: "2vw" }}>
+                            <Card.Title>Experience of <acronym title="Object-Oriented Programming">OOP</acronym> Languages in the Real World</Card.Title>
+                            <Card.Header variant="top">
+                                <iframe src="https://ee-4453.projects.earthengine.app/view/nitrogen-dioxide-in-sg-overtime" style={{ width: "100%", minHeight: "400px" }}></iframe>
+                            </Card.Header>
+                            <Card.Subtitle style={{ marginTop: "6px" }}>Satellite applet made using Javascript</Card.Subtitle>
+                            <Card.Text> I have garnered much experience from constantly programming in <strong>Object-Oriented Programming</strong> languages for real world projects, like <strong>C++</strong> in Arduino, <strong>Javascript</strong> and <strong>Python</strong> for all my projects, above is an example of me using Javascript to utilise the Google Earth Engine database of remote sensing data.</Card.Text>
+                            <Card.Link href="#/engineering">Details about my engineering projects</Card.Link>
+                        </Card>
+                    </Col>
+                    <Col xs lg="6">
+                        <Card style={{ padding: "2vw" }}>
+                            <Card.Title>Video Game Design</Card.Title>
+                        </Card>
+                    </Col>
+                </Row>
+                <Row style={{ marginTop: "2vw" }}>
+                    <Col xs lg="6">
+                        <Card>
+                            <Card.Title>Presentation Skills</Card.Title>
+                            <Card.Subtitle></Card.Subtitle>
+                        </Card>
+                    </Col>
+                    <Col xs lg="6">
+                        <Card style={{ padding: "2vw" }}>
+                            <Card.Title>Advocate of the Humanities</Card.Title>
+                        </Card>
+                    </Col>
+                </Row>
+                {/* <Row>
                     <Col xs lg="4">
                         <Card>
                             <Card.Img variant="top" alt="showcasing how I integrated geography and game design to design a water saving game" src="./waterSaver.png" style={{ maxHeight: "284px" }} />
@@ -186,7 +249,7 @@ function Homepage() {
                             </Card.Body>
                         </Card>
                     </Col>
-                </Row>
+                </Row> */}
             </section>
             <Footer id="bottomFooter">
                 <Footer.Top>
