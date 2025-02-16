@@ -171,9 +171,9 @@ function Homepage() {
                             <Card.Subtitle>Germany is world-renowned for its engineering</Card.Subtitle>
                             <Card.Header variant="top">
                                 <img src="./GermanyR&D.png" style={{ width: "100%", minHeight: "200px" }}></img>
-                                Total Expenditure on Research by Germany Figure from ResearchGate
+                                Total Expenditure on Research by Germany Figure from the Federal Statistics Office
                             </Card.Header>
-                            <Card.Body>
+                            <Card.Body style={{ textAlign: "justify" }}>
                                 Guten Tag! I have been self-learning German since last year, and I am currently at the high A1 level, which means I can discuss my daily routine, order food at a restaurant, and chat a little in German according to the international CEFR Levels. This is because I anticipate that Germany will play a key role in the Engineering Industry, and thus I am learning German to better understand the culture and language of the country so I can hopefully have an overseas internship or exchange programme to learn more about Germany's strategy in engineering.
                             </Card.Body>
                         </Card>
@@ -185,28 +185,57 @@ function Homepage() {
                             <Card.Title>Experience of <acronym title="Object-Oriented Programming">OOP</acronym> Languages in the Real World</Card.Title>
                             <Card.Header variant="top">
                                 <iframe src="https://ee-4453.projects.earthengine.app/view/nitrogen-dioxide-in-sg-overtime" style={{ width: "100%", minHeight: "400px" }}></iframe>
+                                <Card.Subtitle style={{ marginTop: "6px" }}>Satellite applet made using Javascript</Card.Subtitle>
                             </Card.Header>
-                            <Card.Subtitle style={{ marginTop: "6px" }}>Satellite applet made using Javascript</Card.Subtitle>
-                            <Card.Text> I have garnered much experience from constantly programming in <strong>Object-Oriented Programming</strong> languages for real world projects, like <strong>C++</strong> in Arduino, <strong>Javascript</strong> and <strong>Python</strong> for all my projects, above is an example of me using Javascript to utilise the Google Earth Engine database of remote sensing data.</Card.Text>
-                            <Card.Link href="#/engineering">Details about my engineering projects</Card.Link>
+                            <Card.Body>
+                                <Card.Text style={{ textAlign: "justify" }}> I have garnered much experience from constantly programming in <strong>Object-Oriented Programming</strong> languages for real world projects, like <strong>C++</strong> in Arduino, <strong>Javascript</strong> and <strong>Python</strong> for all my projects, above is an example of me using Javascript to utilise the Google Earth Engine database of remote sensing data.</Card.Text>
+                                <Card.Link href="#/engineering">Details about my engineering projects</Card.Link>
+                            </Card.Body>
                         </Card>
                     </Col>
                     <Col xs lg="6">
                         <Card style={{ padding: "2vw" }}>
                             <Card.Title>Video Game Design</Card.Title>
+                            <Card.Header>
+                                <img src="./waterSaver.png" style={{ widith: "100%", maxHeight: "400px" }}></img>
+                                <Card.Subtitle style={{ marginTop: "6px" }}>Water Saving Game I made for a Geography Project</Card.Subtitle>
+                            </Card.Header>
+
+                            <Card.Body>
+                                <Card.Text style={{ textAlign: "justify" }}>I am also a self-taught game designer, and I have been working on multiple game projects to further enhance my skills in C# and game design, below is my indie Itch.io website shocasing these games. Some examples of these are the space asteroid games, water saver game and also the #D simulation of the backrooms. </Card.Text>
+                                <Card.Link href="https://martymcfli.itch.io/" target="blank">Find out more!</Card.Link>
+                            </Card.Body>
                         </Card>
                     </Col>
                 </Row>
                 <Row style={{ marginTop: "2vw" }}>
                     <Col xs lg="6">
-                        <Card>
-                            <Card.Title>Presentation Skills</Card.Title>
-                            <Card.Subtitle></Card.Subtitle>
+                        <Card style={{ padding: "2vw" }}>
+                            <Card.Title>Advocate of the humanities</Card.Title>
+                            <Card.Header>
+                                <img src="./humanityCard.jpg" style={{ width: "100%", maxHeight: "400px" }}></img>
+                                <Card.Subtitle style={{ marginTop: "6px" }}>One of My Best Delegate Awards!</Card.Subtitle>
+                            </Card.Header>
+
+                            <Card.Body>
+                                <Card.Text style={{ textAlign: "justify" }}>
+                                    I am also an advocate of the humanities, and I have been to multiple Model United Nations Conferences to further enhance my skills in diplomacy, international relations, public policy in the case of crisise, and geopolitics.
+                                </Card.Text>
+                            </Card.Body>
                         </Card>
                     </Col>
                     <Col xs lg="6">
                         <Card style={{ padding: "2vw" }}>
-                            <Card.Title>Advocate of the Humanities</Card.Title>
+                            <Card.Title>Active in Public Service</Card.Title>
+                            <Card.Header>
+                                <img src="./YouthPolicyForum.jpg" style={{ width: "100%", maxHeight: "400px" }}></img>
+                                <Card.Subtitle style={{ marginTop: "6px" }}>Me at the Inaugaral Youth Policy Forum questioning the panels</Card.Subtitle>
+                            </Card.Header>
+                            <Card.Body>
+                                <Card.Text>
+
+                                </Card.Text>
+                            </Card.Body>
                         </Card>
                     </Col>
                 </Row>
