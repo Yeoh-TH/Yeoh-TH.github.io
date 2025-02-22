@@ -76,11 +76,19 @@ function Homepage() {
                                         >
                                             Humanities Projects
                                         </NavDropdown.Item>
+
                                         <NavDropdown.Item
-                                            href="#/web-and-games"
-                                            onClick={() => clickNavbarItem('firstDropdown')}
+                                            href="https://martymcfli.itch.io/"
+                                            target="_blank"
+                                            onClick={() => clickNavbarItem('coding')}
                                         >
-                                            Website and Games
+                                            My Indie Games, Itch.io website
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item
+                                            href="https://github.com/Yeoh-TH"
+                                            target="_blank"
+                                            onClick={() => clickNavbarItem('coding')}>
+                                            My Github Page
                                         </NavDropdown.Item>
                                         <NavDropdown.Divider />
                                         <NavDropdown.Item
@@ -167,21 +175,6 @@ function Homepage() {
                     </Col>
                     <Col xs lg="6">
                         <Card style={{ padding: "2vw" }}>
-                            <Card.Title>The German Connection</Card.Title>
-                            <Card.Subtitle>Germany is world-renowned for its engineering</Card.Subtitle>
-                            <Card.Header variant="top">
-                                <img src="./GermanyR&D.png" style={{ width: "100%", minHeight: "200px" }}></img>
-                                Total Expenditure on Research by Germany Figure from the Federal Statistics Office
-                            </Card.Header>
-                            <Card.Body style={{ textAlign: "justify" }}>
-                                Guten Tag! I have been self-learning German since last year, and I am currently at the high A1 level, which means I can discuss my daily routine, order food at a restaurant, and chat a little in German according to the international CEFR Levels. This is because I anticipate that Germany will play a key role in the Engineering Industry, and thus I am learning German to better understand the culture and language of the country so I can hopefully have an overseas internship or exchange programme to learn more about Germany's strategy in engineering.
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-                <Row style={{ marginTop: "2vw" }}>
-                    <Col xs lg="6">
-                        <Card style={{ padding: "2vw" }}>
                             <Card.Title>Experience of <acronym title="Object-Oriented Programming">OOP</acronym> Languages in the Real World</Card.Title>
                             <Card.Header variant="top">
                                 <iframe src="https://ee-4453.projects.earthengine.app/view/nitrogen-dioxide-in-sg-overtime" style={{ width: "100%", minHeight: "400px" }}></iframe>
@@ -190,6 +183,21 @@ function Homepage() {
                             <Card.Body>
                                 <Card.Text style={{ textAlign: "justify" }}> I have garnered much experience from constantly programming in <strong>Object-Oriented Programming</strong> languages for real world projects, like <strong>C++</strong> in Arduino, <strong>Javascript</strong> and <strong>Python</strong> for all my projects, above is an example of me using Javascript to utilise the Google Earth Engine database of remote sensing data.</Card.Text>
                                 <Card.Link href="#/engineering">Details about my engineering projects</Card.Link>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+                <Row style={{ marginTop: "2vw" }}>
+                    <Col xs lg="6">
+                        <Card style={{ padding: "2vw" }}>
+                            <Card.Title>The German Connection</Card.Title>
+                            <Card.Subtitle>Germany is world-renowned for its engineering</Card.Subtitle>
+                            <Card.Header variant="top">
+                                <img src="./GermanyR&D.png" style={{ width: "100%", minHeight: "200px" }}></img>
+                                Total Expenditure on Research by Germany Figure from the Federal Statistics Office
+                            </Card.Header>
+                            <Card.Body style={{ textAlign: "justify" }}>
+                                Guten Tag! I have been self-learning German since last year, and I am currently at the high A1 level, which means I can discuss my daily routine, order food at a restaurant, and chat a little in German according to the international CEFR Levels. This is because I anticipate that Germany will play a key role in the Engineering Industry, and thus I am learning German to better understand the culture and language of the country so I can hopefully have an overseas internship or exchange programme to learn more about Germany's strategy in engineering.
                             </Card.Body>
                         </Card>
                     </Col>
@@ -233,7 +241,7 @@ function Homepage() {
                             </Card.Header>
                             <Card.Body>
                                 <Card.Text>
-
+                                    I am active in engaging projects with the public, for instance I regularly attend forums or talks whenever I can to share my views on issues, for instance above is the picture of me at the inaugaral youth policy forum.
                                 </Card.Text>
                             </Card.Body>
                         </Card>

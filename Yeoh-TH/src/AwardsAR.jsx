@@ -73,11 +73,19 @@ function AwardsAR() {
                                         >
                                             Humanities Projects
                                         </NavDropdown.Item>
+
                                         <NavDropdown.Item
-                                            href="#/web-and-games"
-                                            onClick={() => clickNavbarItem('firstDropdown')}
+                                            href="https://martymcfli.itch.io/"
+                                            target="_blank"
+                                            onClick={() => clickNavbarItem('coding')}
                                         >
-                                            Website and Games
+                                            My Indie Games, Itch.io website
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item
+                                            href="https://github.com/Yeoh-TH"
+                                            target="_blank"
+                                            onClick={() => clickNavbarItem('coding')}>
+                                            My Github Page
                                         </NavDropdown.Item>
                                         <NavDropdown.Divider />
                                         <NavDropdown.Item
@@ -100,16 +108,14 @@ function AwardsAR() {
                             <Container fluid>
                                 <Row>
                                     <Col>
-                                        <Col>
-                                            <p>
-                                                <strong>
-                                                    Featuring my awards
-                                                </strong>
-                                            </p>
-                                            <p>
-                                                These include awards from the Sciences, Humanities and Languages. Please make your selection to learn more.
-                                            </p>
-                                        </Col>
+                                        <p>
+                                            <strong>
+                                                Featuring my awards
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            These include awards from the Sciences, Humanities and Languages. Please make your selection to learn more.
+                                        </p>
                                     </Col>
                                     <Col>
                                         <NavDropdown.Item
@@ -129,6 +135,12 @@ function AwardsAR() {
                                             onClick={() => clickNavbarItem('secondDropdown')}
                                         >
                                             Languages
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Divider />
+                                        <NavDropdown.Item
+                                            href='#/awards-others'
+                                            onClick={() => clickNavbarItem('secondDropdown')}>
+                                            Others
                                         </NavDropdown.Item>
                                     </Col>
                                 </Row>
