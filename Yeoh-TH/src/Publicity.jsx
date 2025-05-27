@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import '@govtechsg/sgds/css/sgds.css';
 import { Navbar, Nav, NavDropdown, Footer, Container, Col, Row, Card, NavLink } from '@govtechsg/sgds-react';
+import spaceGroupPhoto from '/UNOOSASpaceTalk.png';
 
 function Publicity() {
     const clickNavbarItem = eventKey => {
@@ -156,8 +157,8 @@ function Publicity() {
             </Navbar>
             <section className="m-8">
                 <Row>
-                    <Col xs lg="12">
-                        <Card>
+                    <Col xs lg="13">
+                        <Card style={{ margin: '10px' }}>
                             <Card.Body>
                                 <Card.Title style={{ padding: '10px' }}>
                                     Presenter to the Minister at the STEM 2.0 Forum Opening: Featured on CNA
@@ -174,25 +175,6 @@ function Publicity() {
                                 </Card.Header>
                             </Card.Body>
                         </Card>
-                    </Col>
-                    <Col xs lg="13">
-                        <Card style={{ margin: '10px' }}>
-                            <Card.Body>
-                                <Card.Title style={{ padding: '10px' }}>
-                                    Asking Questions during the Youth Policy Forum
-                                </Card.Title>
-                                <Card.Text>
-                                    <p>
-                                        I was quite proactive in asking questions at the National Youth Policy Forum, try and spot me in this Tiktok Short!
-                                    </p>
-                                </Card.Text>
-                                <Card.Link href="https://www.tiktok.com/@tropicmonsters/video/7410721192039959815">Click Here</Card.Link>
-                            </Card.Body>
-                            <Card.Img variant="bottom" alt="youth policy forum questionaire" src="./YouthPolicyForum.jpg" style={{ width: "100%" }} />
-                        </Card>
-                    </Col>
-
-                    <Col xs lg="13">
                         <Card style={{ margin: "10px" }}>
                             <Card.Body>
                                 <Card.Title style={{ padding: '10px' }}>
@@ -211,6 +193,51 @@ function Publicity() {
                             </Card.Body>
                         </Card>
                     </Col>
+                    <Col xs lg="13">
+                        <Card style={{ margin: '10px' }}>
+                            <Card.Body>
+                                <Card.Title style={{ padding: '10px' }}>
+                                    UNOOSA Space Talk
+                                </Card.Title>
+                                <Card.Header>
+                                    <div className="insta-container">
+                                        <img src={spaceGroupPhoto} alt="UNOOSA Space Talk" style={{ width: "100%" }} />
+                                        <NavLink href="https://www.instagram.com/p/Cv1b2Y5P0aH/" target="_blank" />
+                                    </div>
+                                    <Card.Link>
+                                        <a href="https://www.instagram.com/p/DGsZX1VzBxF/?img_index=4" target="_blank" rel="noopener noreferrer" >
+                                            Instagram Post
+                                        </a>
+                                    </Card.Link>
+                                </Card.Header>
+                                <Card.Text>
+                                    <p>
+                                        I was able to lead a school delegation to the United Nations Office for Outer Space Affairs (UNOOSA) Space Talk, where I was able to connect with the director of UNOOSA, and learn more about the jobs that the United Nations takes up. This was a great opportunity to learn more on an international platform and network as well, knowing more hands-on knowledge in the space sector.
+                                    </p>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs lg="13">
+                        <Card style={{ margin: '10px' }}>
+                            <Card.Body>
+                                <Card.Title style={{ padding: '10px' }}>
+                                    Asking Questions during the Youth Policy Forum
+                                </Card.Title>
+                                <Card.Text>
+                                    <p>
+                                        I was quite proactive in asking questions at the National Youth Policy Forum, try and spot me in this Tiktok Short!
+                                    </p>
+                                </Card.Text>
+                                <Card.Link href="https://www.tiktok.com/@tropicmonsters/video/7410721192039959815">Click Here</Card.Link>
+                            </Card.Body>
+                            <Card.Img variant="bottom" alt="youth policy forum questionaire" src="./YouthPolicyForum.jpg" style={{ width: "100%" }} />
+                        </Card>
+                    </Col>
+
+
                 </Row>
             </section>
             <Footer id="bottomFooter">

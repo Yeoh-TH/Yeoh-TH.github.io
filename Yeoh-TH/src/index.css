@@ -79,6 +79,13 @@
   height: 100%;
 }
 
+.insta-container {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%;
+}
+
 Nav {
   background-color: var(--mfaNavy);
 }

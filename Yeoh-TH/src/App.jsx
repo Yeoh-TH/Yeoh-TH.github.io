@@ -7,6 +7,7 @@ import AppliedResearch from './WebAndGames';
 import AwardsHum from "./AwardsHum";
 import AwardsAR from "./AwardsAR";
 import Publicity from "./Publicity";
+import About from './AboutMe';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/awards-ar" element={<AwardsAR />} />
         <Route path="/awards-hum" element={<AwardsHum />} />
         <Route path="/publicity" element={<Publicity />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </>
   )
