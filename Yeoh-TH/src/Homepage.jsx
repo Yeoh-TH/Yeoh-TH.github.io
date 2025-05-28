@@ -205,7 +205,7 @@ function Homepage() {
                         <Card style={{ padding: "2vw" }}>
                             <Card.Title>Video Game Design</Card.Title>
                             <Card.Header>
-                                <img src="./waterSaver.png" style={{ widith: "100%", maxHeight: "400px" }}></img>
+                                <img src="./waterSaver.png" style={{ width: "100%", maxHeight: "400px" }}></img>
                                 <Card.Subtitle style={{ marginTop: "6px" }}>Water Saving Game I made for a Geography Project</Card.Subtitle>
                             </Card.Header>
 
