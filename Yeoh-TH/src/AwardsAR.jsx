@@ -154,7 +154,18 @@ function AwardsAR() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            <section className="m-8"></section>
+            <section className="m-8">
+                <Row>
+                    <Col xs lg="13">
+                        <Card>
+                            <Card.Header>
+
+                            </Card.Header>
+                        </Card>
+                    </Col>
+                </Row>
+
+            </section>
 
             <Footer id="bottomFooter">
                 <Footer.Top>

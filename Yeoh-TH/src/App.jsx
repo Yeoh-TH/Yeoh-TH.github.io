@@ -2,8 +2,8 @@ import react from 'react'
 import { Routes, Route } from 'react-router-dom';
 import Homepage from "./Homepage";
 import Engineering from './EngineeringStuff';
-import WebAndGames from './AppliedResearch';
-import AppliedResearch from './WebAndGames';
+import AppliedResearch from './AppliedResearch';
+import WebAndGames from './WebAndGames';
 import AwardsHum from "./AwardsHum";
 import AwardsAR from "./AwardsAR";
 import Publicity from "./Publicity";
