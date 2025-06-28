@@ -71,12 +71,6 @@ function AboutMe() {
                                         >
                                             Service Projects
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item
-                                            href="#/humanities"
-                                            onClick={() => clickNavbarItem('firstDropdown')}
-                                        >
-                                            Humanities Projects
-                                        </NavDropdown.Item>
 
                                         <NavDropdown.Item
                                             href="https://martymcfli.itch.io/"
@@ -103,53 +97,6 @@ function AboutMe() {
                             </Container>
                         </NavDropdown>
 
-                        <NavDropdown
-                            isMegaMenu
-                            title="Awards"
-                            href="https://google.com"
-                            eventKey="awards"
-                            onClick={() => clickNavbarItem('awards')}>
-                            <Container fluid>
-                                <Row>
-                                    <Col>
-                                        <p>
-                                            <strong>
-                                                Featuring my awards
-                                            </strong>
-                                        </p>
-                                        <p>
-                                            These include awards from the Sciences, Humanities and Languages. Please make your selection to learn more.
-                                        </p>
-                                    </Col>
-                                    <Col>
-                                        <NavDropdown.Item
-                                            href="#/awards-hum"
-                                            onClick={() => clickNavbarItem('secondDropdown')}
-                                        >
-                                            Humanities
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Item
-                                            href="#/awards-ar"
-                                            onClick={() => clickNavbarItem('secondDropdown')}
-                                        >
-                                            Applied Research
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Item
-                                            href="#/awards-lang"
-                                            onClick={() => clickNavbarItem('secondDropdown')}
-                                        >
-                                            Languages
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Divider />
-                                        <NavDropdown.Item
-                                            href='#/awards-others'
-                                            onClick={() => clickNavbarItem('secondDropdown')}>
-                                            Others
-                                        </NavDropdown.Item>
-                                    </Col>
-                                </Row>
-                            </Container>
-                        </NavDropdown>
                         <Nav.Item>
                             <Nav.Link href="#/about" eventKey="about" onClick={() => clickNavbarItem('about')}>
                                 About Me

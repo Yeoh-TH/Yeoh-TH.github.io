@@ -68,12 +68,12 @@ function Publicity() {
                                         >
                                             Service Projects
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item
+                                        {/* <NavDropdown.Item
                                             href="#/humanities"
                                             onClick={() => clickNavbarItem('firstDropdown')}
                                         >
                                             Humanities Projects
-                                        </NavDropdown.Item>
+                                        </NavDropdown.Item> */}
 
                                         <NavDropdown.Item
                                             href="https://martymcfli.itch.io/"
@@ -100,7 +100,7 @@ function Publicity() {
                             </Container>
                         </NavDropdown>
 
-                        <NavDropdown
+                        {/* <NavDropdown
                             isMegaMenu
                             title="Awards"
                             href="https://google.com"
@@ -146,7 +146,7 @@ function Publicity() {
                                     </Col>
                                 </Row>
                             </Container>
-                        </NavDropdown>
+                        </NavDropdown> */}
                         <Nav.Item>
                             <Nav.Link href="#/about" eventKey="about" onClick={() => clickNavbarItem('about')}>
                                 About Me
