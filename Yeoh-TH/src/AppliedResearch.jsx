@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Navbar, Nav, NavDropdown, Footer, Container, Col, Row, Card } from '@govtechsg/sgds-react';
 import '@govtechsg/sgds/css/sgds.css';
 import "./index.css";
-import Tsunagu1 from "/Tsunagu1.jpeg"
 
 function AppliedResearch() {
     const clickNavbarItem = eventKey => {
@@ -133,7 +132,7 @@ function AppliedResearch() {
                             </Card.Header>
                             <Card.Body>
                                 <p>One of the big ticket research projects I undergone was one relating to the topic of the investigation on acetamiophen in fever and flu tablets.</p>
-                                <video src="ISS_Video.mov" style={{ maxWidth: "40vw" }} controls />
+                                <video src="ISS_Video.mov" style={{ maxWidth: "45vw", borderRadius: "5%", borderWidth: "10px", borderColor: "black" }} controls />
                                 <p>During this research project with my fellow teammates Justin and Nathan, I was able to apply my chemistry knowledge to use and inquire into the true amount of acetaminophen, or paracetamoul, in the fever and flue tablets we consume commonly.</p>
                                 <p>Thus, we were able to present our project on many different stages as well, for instance in the global competition Opportunity-X or the NJC-ASTAR Science symposium</p>
                             </Card.Body>
