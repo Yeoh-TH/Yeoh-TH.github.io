@@ -112,8 +112,8 @@ function Homepage() {
                             <Card.Title>Technical Skills I have developed</Card.Title>
                             <Card.Subtitle style={{ marginTop: "6px" }}>Soldering, 3D-Printing, Threading... I have learnt them all! </Card.Subtitle>
                             <Card.Header variant="top">
-                                <video src="./SolderingVid.mp4#t=180,240" style={{ width: "100%", minHeight: "400px" }} controls muted ></video>
-                                Video of me soldering
+                                <img src="./technicalSkills.jpg" style={{width:"100%"}}></img>
+                                <Card.Subtitle style={{marginTop:"4px"}}>Picture of myself at SSEF</Card.Subtitle>
                             </Card.Header>
                             <Card.Body style={{ textAlign: "justified" }}>
                                 I believe that to first understand the world, one must first understand the tools that shape it. I have learnt to use a wide range of physical and digital tools like 3D Modelling, Soldering and even Mechanical skills like Threading to bring countless projects to life.<br /> Read on to find out how I apply these skills!
@@ -124,7 +124,7 @@ function Homepage() {
                         <Card style={{ padding: "2vw" }}>
                             <Card.Title>Experience of <acronym title="Object-Oriented Programming">OOP</acronym> Languages in the Real World</Card.Title>
                             <Card.Header variant="top">
-                                <iframe src="https://ee-4453.projects.earthengine.app/view/nitrogen-dioxide-in-sg-overtime" style={{ width: "100%", minHeight: "400px" }}></iframe>
+                                <iframe src="https://wildfire-406604.projects.earthengine.app/view/fireden" style={{ width: "100%", minHeight: "400px" }}></iframe>
                                 <Card.Subtitle style={{ marginTop: "6px" }}>Satellite applet made using Javascript</Card.Subtitle>
                             </Card.Header>
                             <Card.Body>
@@ -168,13 +168,13 @@ function Homepage() {
                         <Card style={{ padding: "2vw" }}>
                             <Card.Title>Advocate of the humanities</Card.Title>
                             <Card.Header>
-                                <img src="./humanityCard.jpg" style={{ width: "100%", maxHeight: "400px" }}></img>
-                                <Card.Subtitle style={{ marginTop: "6px" }}>One of My Best Delegate Awards!</Card.Subtitle>
+                                <img src="./humanityCard.png" style={{ width: "100%", maxHeight: "400px" }}></img>
+                                <Card.Subtitle style={{ marginTop: "6px" }}>One of My Chairing Experiences!</Card.Subtitle>
                             </Card.Header>
 
                             <Card.Body>
                                 <Card.Text style={{ textAlign: "justify" }}>
-                                    I am also an advocate of the humanities, and I have been to multiple Model United Nations Conferences to further enhance my skills in diplomacy, international relations, public policy in the case of crisise, and geopolitics.
+                                    I am also an advocate of the humanities, and I have been to multiple Model United Nations Conferences to further enhance my skills in diplomacy, international relations, public policy in the case of crisis and geopolitics.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -236,19 +236,18 @@ function Homepage() {
                 </Row> */}
             </section>
             <Footer id="bottomFooter">
-                <Footer.Top>
-                    <Footer.Top.ContactLinks>
-                        <a href="mailto:soundwavedecepticonleader@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <i class="fa fas-contact" style={{ fontSize: 'relative', color: '#464d77', marginRight: '4px' }} ></i>
-                            Contact Me!
-                        </a>
-                        <a href="https://boxd.it/cfpnX" target="_blank">
-                            Letterboxd
-                            <i class="fa fa-film" style={{ fontSize: 'relative', color: '#464d77', marginLeft: '4px' }}></i>
-                        </a>
-                    </Footer.Top.ContactLinks>
-                </Footer.Top>
-            </Footer>
+                            <Footer.Top>
+                                <Footer.Top.ContactLinks>
+                                    <a href="mailto:soundwavedecepticonleader@gmail.com" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa fas-contact" style={{ fontSize: 'relative', color: '#464d77', marginRight: '4px' }} ></i>
+                                        Contact Me!
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/tian-huai-yeoh/" target="_blank">
+                                        <i class="fa fa-linkedin" style={{ fontSize: '5vw', color: 'rgb(95, 117, 246)', marginLeft: '4px' }}></i>
+                                    </a>
+                                </Footer.Top.ContactLinks>
+                            </Footer.Top>
+                        </Footer>
         </div>
     );
 }

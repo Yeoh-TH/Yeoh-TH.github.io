@@ -106,6 +106,54 @@ function Service() {
             <section className="m-8">
                 <Row>
                     <Col xs lg="13">
+                        <Card><Card.Img variant="top" src="./MFAGroup1.jpeg" />
+                            <Card.Header>
+                                <Card.Title>
+                                    MFA Mentorship
+                                </Card.Title>
+                                
+                            </Card.Header>
+                            <Card.Body style={{ textAlign: 'justify' }}>
+                                <p>
+                                    In July 2025, I decided to take part in the <abbr title="Ministry of Foreign Affairs">MFA</abbr> Mentorship Programme as a mentee, with the goal of delving more into public-foreign policy, and gain a greater historical appreciation of Singapore's Foreign Policy along with my team.
+                                </p >
+                                <p>
+                                    This project is still ongoing, but I am happy to announce that 2 social mediat posts have been completed by my group and are going to be posted on MFA's instagram page soon!
+                                </p>
+                                
+                            </Card.Body>
+
+                        </Card>
+                    </Col>
+
+                    <Col xs lg="13">
+                        <Card><Card.Img variant="top" src="./OP25Crisis.png" />
+                            <Card.Header>
+                                <Card.Title>
+                                    OPMUN 2025 Crisis
+                                </Card.Title>
+                                
+                            </Card.Header>
+                            <Card.Body style={{ textAlign: 'justify' }}>
+                                <p>
+                                    As Assistant Crisis Director for the topic of the Fall of Singapore, I was able to work with my team to deliver a MUN crisis, on the topic of 1942 Singapore.
+                                </p >
+
+                                <p>
+                                    Here is one of the crisis update websites that I created for the crisis:
+                                    <embed src="https://opmun25jcc.github.io/beac/" style={{width:"100%"}}></embed>
+
+                                </p>
+                                
+                            </Card.Body>
+
+                        </Card>
+                    </Col>
+
+
+                </Row>
+                <Row>
+                    <Col xs lg="13">
                         <Card>
                             <Card.Header>
                                 <Card.Title>
@@ -153,19 +201,18 @@ function Service() {
             </section>
 
             <Footer id="bottomFooter">
-                <Footer.Top>
-                    <Footer.Top.ContactLinks>
-                        <a href="mailto:soundwavedecepticonleader@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <i class="fa fas-contact" style={{ fontSize: 'relative', color: '#464d77', marginRight: '4px' }} ></i>
-                            Contact Me!
-                        </a>
-                        <a href="https://boxd.it/cfpnX" target="_blank">
-                            Letterboxd
-                            <i class="fa fa-film" style={{ fontSize: 'relative', color: '#464d77', marginLeft: '4px' }}></i>
-                        </a>
-                    </Footer.Top.ContactLinks>
-                </Footer.Top>
-            </Footer>
+                                        <Footer.Top>
+                                            <Footer.Top.ContactLinks>
+                                                <a href="mailto:soundwavedecepticonleader@gmail.com" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fa fas-contact" style={{ fontSize: 'relative', color: '#464d77', marginRight: '4px' }} ></i>
+                                                    Contact Me!
+                                                </a>
+                                                <a href="https://www.linkedin.com/in/tian-huai-yeoh/" target="_blank">
+                                                    <i class="fa fa-linkedin" style={{ fontSize: '5vw', color: 'rgb(95, 117, 246)', marginLeft: '4px' }}></i>
+                                                </a>
+                                            </Footer.Top.ContactLinks>
+                                        </Footer.Top>
+                                    </Footer>
         </div>
     )
 }

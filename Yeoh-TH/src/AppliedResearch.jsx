@@ -143,19 +143,18 @@ function AppliedResearch() {
             </section>
 
             <Footer id="bottomFooter">
-                <Footer.Top>
-                    <Footer.Top.ContactLinks>
-                        <a href="mailto:soundwavedecepticonleader@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <i class="fa fas-contact" style={{ fontSize: 'relative', color: '#464d77', marginRight: '4px' }} ></i>
-                            Contact Me!
-                        </a>
-                        <a href="https://boxd.it/cfpnX" target="_blank">
-                            Letterboxd
-                            <i class="fa fa-film" style={{ fontSize: 'relative', color: '#464d77', marginLeft: '4px' }}></i>
-                        </a>
-                    </Footer.Top.ContactLinks>
-                </Footer.Top>
-            </Footer>
+                            <Footer.Top>
+                                <Footer.Top.ContactLinks>
+                                    <a href="mailto:soundwavedecepticonleader@gmail.com" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa fas-contact" style={{ fontSize: 'relative', color: '#464d77', marginRight: '4px' }} ></i>
+                                        Contact Me!
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/tian-huai-yeoh/" target="_blank">
+                                        <i class="fa fa-linkedin" style={{ fontSize: '5vw', color: 'rgb(95, 117, 246)', marginLeft: '4px' }}></i>
+                                    </a>
+                                </Footer.Top.ContactLinks>
+                            </Footer.Top>
+                        </Footer>
         </div>
     )
 }

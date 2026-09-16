@@ -157,6 +157,34 @@ function Publicity() {
             </Navbar>
             <section className="m-8">
                 <Row>
+                    <Col>
+                            <Card>
+
+                                <Card.Body>
+                                <Card.Title>Charity Dinner with Lawrence Wong</Card.Title>
+                                <Card.Text>
+                                    <p>
+                                        As a volunteer at the Happy Mart of Hao Ren Shi, I had the privilege of meeting Lawrence Wong, the Prime Minister of Singapore when he visited it's inaugural opening.
+                                        <br/>
+                                        Afterwards, I was also inivted to join a Charity Dinner with him later that year, and the event was covered by the Straits Times and LianHe Zaobao, for which I feel deeply honoured. Below I have also embedded one of the articles written by Straits Times featuring myself in the headline as well.
+                                    </p>
+                                </Card.Text>
+                                </Card.Body>
+                                <Card.Header>
+                                    <div className="video-container">
+                                    <iframe src="https://www.straitstimes.com/singapore/community/ground-up-initiatives-like-charitys-free-community-minimart-embody-we-first-spirit-pm-wong" allowFullScreen></iframe>
+                                    </div>
+                                </Card.Header>
+                                
+
+
+                            </Card>
+                    </Col>
+
+                </Row>
+
+
+                <Row>
                     <Col xs lg="13">
                         <Card style={{ margin: '10px' }}>
                             <Card.Body>
@@ -219,26 +247,6 @@ function Publicity() {
                         </Card>
                     </Col>
                 </Row>
-                <Row>
-                    <Col xs lg="13">
-                        <Card style={{ margin: '10px' }}>
-                            <Card.Body>
-                                <Card.Title style={{ padding: '10px' }}>
-                                    Asking Questions during the Youth Policy Forum
-                                </Card.Title>
-                                <Card.Text>
-                                    <p>
-                                        I was quite proactive in asking questions at the National Youth Policy Forum, try and spot me in this Tiktok Short!
-                                    </p>
-                                </Card.Text>
-                                <Card.Link href="https://www.tiktok.com/@tropicmonsters/video/7410721192039959815">Click Here</Card.Link>
-                            </Card.Body>
-                            <Card.Img variant="bottom" alt="youth policy forum questionaire" src="./YouthPolicyForum.jpg" style={{ width: "100%" }} />
-                        </Card>
-                    </Col>
-
-
-                </Row>
             </section>
             <Footer id="bottomFooter">
                 <Footer.Top>
@@ -247,9 +255,8 @@ function Publicity() {
                             <i class="fa fas-contact" style={{ fontSize: 'relative', color: '#464d77', marginRight: '4px' }} ></i>
                             Contact Me!
                         </a>
-                        <a href="https://boxd.it/cfpnX" target="_blank">
-                            Letterboxd
-                            <i class="fa fa-film" style={{ fontSize: 'relative', color: '#464d77', marginLeft: '4px' }}></i>
+                        <a href="https://www.linkedin.com/in/tian-huai-yeoh/" target="_blank">
+                            <i class="fa fa-linkedin" style={{ fontSize: '5vw', color: 'rgb(95, 117, 246)', marginLeft: '4px' }}></i>
                         </a>
                     </Footer.Top.ContactLinks>
                 </Footer.Top>

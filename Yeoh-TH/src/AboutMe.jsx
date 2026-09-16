@@ -108,22 +108,39 @@ function AboutMe() {
             <section className="m-8" id="aboutSection">
                 <Container>
                     <img src={aboutMePic} style={{ maxWidth: "50vw" }} />
-
-
                 </Container>
                 <p>Wilkommen! As you will know all about me, I guess this is where the more personal and "fun" side of me can be written out haha.
                     As you have seen, I am a person who is very interested in the sciences, humanities and languages.
-                    Along with that, I am also someone who is very interested in engineering and applied research.
+                   
+                    <br/><br/>Along with that, I am also someone who is very interested in engineering and applied research.
                     However, I have always believed that these are not separate interests or disciplines that I have
                     developed over the years, but rather something that is bound to bring me to not just a greater understanding of the world around me,
-                    but also new unique ideas everywhere to go. After all, I believe that this is what makes me, <strong>me</strong>.
+                    but also new unique ideas everywhere to go. 
+                    
+                    <br/><br/>After all, I believe that this is what makes me, <strong>me</strong>.
 
-                    Though that may make me seem more of a generalist, I do also believe that all these develops so far have a purpose in this journey called life,
+                    Though that may make me seem more of a generalist, I do also believe that all these developments so far have a purpose in this journey called life,
                     whether it be giving me a new unique perspective on the world around me, or even just a new skill that I can use to help others, I believe that
                     any and every opportunity is alway worth taking, no matter the outcome.
                 </p>
+                
             </section>
+            <Footer id="bottomFooter">
+                            <Footer.Top>
+                                <Footer.Top.ContactLinks>
+                                    <a href="mailto:soundwavedecepticonleader@gmail.com" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa fas-contact" style={{ fontSize: 'relative', color: '#464d77', marginRight: '4px' }} ></i>
+                                        Contact Me!
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/tian-huai-yeoh/" target="_blank">
+                                        <i class="fa fa-linkedin" style={{ fontSize: '5vw', color: '#0026ffff', marginLeft: '4px' }}></i>
+                                    </a>
+                                </Footer.Top.ContactLinks>
+                            </Footer.Top>
+                        </Footer>
         </div>
+
+        
 
     )
 }

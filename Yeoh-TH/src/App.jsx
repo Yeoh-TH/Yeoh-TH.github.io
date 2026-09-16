@@ -8,7 +8,7 @@ import AwardsHum from "./AwardsHum";
 import AwardsAR from "./AwardsAR";
 import Publicity from "./Publicity";
 import About from './AboutMe';
-import Service from './service';
+import Service from './Service';
 
 const App = () => {
   return (

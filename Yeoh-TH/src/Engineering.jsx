@@ -7,53 +7,6 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 function Engineering() {
-    useEffect(() => {
-        const container = document.getElementById('toroid-mirror-3d');
-        if (!container) return;
-
-        // Set size
-        const width = container.clientWidth || 400;
-        const height = container.clientHeight || 400;
-
-        // Scene, Camera, Renderer
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 1000);
-        camera.position.set(0, 0, 30);
-
-        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-        renderer.setSize(width, height);
-        container.appendChild(renderer.domElement);
-
-        // Controls
-        const controls = new OrbitControls(camera, renderer.domElement);
-
-        // Light
-        const light = new THREE.HemisphereLight(0xB1E1FF, 0xB97A20, 1)
-        // scene.add(new THREE.AmbientLight(0xffffff, 10));
-        scene.add(light);
-
-        // Load Model
-        const loader = new GLTFLoader();
-        loader.load('/toroidContainer.glb', gltf => {
-            scene.add(gltf.scene);
-            animate();
-        }, undefined, error => {
-            console.error(error);
-        });
-
-        // Animate
-        function animate() {
-            requestAnimationFrame(animate);
-            controls.update();
-            renderer.render(scene, camera);
-        }
-
-        // Cleanup
-        return () => {
-            renderer.dispose();
-            if (container) container.innerHTML = '';
-        };
-    }, []);
 
     return (
         <div style={{ width: "100%", height: "100%" }}>
@@ -155,20 +108,24 @@ function Engineering() {
                         <Card>
                             <Card.Header>
                                 <Card.Title>
-                                    Properties of a Toroidal Mirror
-                                    <Card.Img style={{ maxWidth: "17vw" }} src="/DiagonalViewofToroidalMirrorSolarConcentrator.jpeg" />
-                                    <Card.Img style={{ maxWidth: "24vw" }} src="/ReflectedLightBehindLamp.jpeg" />
+                                    Cylindrical Mirror as a Solar Concentrator
                                 </Card.Title>
                             </Card.Header>
+                            
                             <Card.Body style={{ textAlign: 'justify' }}>
+                                <Card.Img style={{ maxWidth: "17vw" }} src="/SSEFProto.png" />
+                                <Card.Img style={{ maxWidth: "24vw" }} src="/SSEF-boothPhoto.JPG"></Card.Img>
                                 <p>
-                                    Currently I am embarking on a project which will investigate and engineer an optimum toroidal mirror solar concentrator for solar panels, which was part of my interest in learning about power systems for CubeSates.
+                                    I have embarked on a project which will investigate and engineer an optimum toroidal mirror solar concentrator for solar panels, which was part of my interest in learning about power systems for CubeSates.
                                 </p>
                                 <p>
-                                    This project is still currently under work in progress, and I am currently working on the 3D model of the toroidal mirror. The 3D models are created using Blender, and I am still working on a few iterations to try and boil water with. Here, I have used Three.js to render one of my 3D models in this page.
+                                    Overtime, I was able to practice many partical skills, like soldering, 3D printing, programming of microcontrollers like the SSTuino and also mathematical modelling in practical applications of ray tracing, allowing me to fully develop my project to a remarkable stage, where I was able to present it at the Singapore Science and Engineering Fair 2025, where I was able to impress the judges and industry panelists with my presentation to win a Silver Award.
+                                    <br/>
+                                    Now, with validation of my ideas, I am now committed to transform my project from a concept into a real product, causing me to found the startup Cylindrical Solar Concentrators (CSC) to make solar energy more accessible for all.
                                 </p>
-                                <p>Feel free to take a look!</p>
-                                <div id="toroid-mirror-3d" style={{ width: "100%", height: "400px" }} />
+                                <embed src="SSEF2026_Silver-26.pdf#page=2&toolbar=0&view=FitH" width="100%" height="600px"></embed>
+                                <p>                                    Do feel free to look at my project report, and contact me if you have queries!</p>
+                                <iframe src="SSEF_FINAL.pdf#page=2&toolbar=0&view=FitH" width="100%" height="600px"></iframe>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -194,7 +151,19 @@ function Engineering() {
                     </Col>
                 </Row>
             </section>
-            {/* ...Footer... */}
+            <Footer id="bottomFooter">
+                            <Footer.Top>
+                                <Footer.Top.ContactLinks>
+                                    <a href="mailto:soundwavedecepticonleader@gmail.com" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa fas-contact" style={{ fontSize: 'relative', color: '#464d77', marginRight: '4px' }} ></i>
+                                        Contact Me!
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/tian-huai-yeoh/" target="_blank">
+                                        <i class="fa fa-linkedin" style={{ fontSize: '5vw', color: 'rgb(95, 117, 246)', marginLeft: '4px' }}></i>
+                                    </a>
+                                </Footer.Top.ContactLinks>
+                            </Footer.Top>
+                        </Footer>
         </div>
     );
 }
